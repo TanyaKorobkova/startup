@@ -1,0 +1,379 @@
+@import url('./css/media.css') screen;
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+
+.section-home{
+    color: white;
+    background-image:url('../jpeg/Home_Background.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.logo{
+    padding-left:16%;
+    padding-top:1.9%;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: bold;
+}
+
+.logo a{
+    color:white;
+}
+
+.nav-item a{
+    color: white;
+    letter-spacing: 0.35px;
+    font-family: Montserrat;
+    font-size: 14px;
+    padding-top:35px;
+    padding-right: 20px;
+}
+
+.welcome h1{
+    text-align: center;
+    padding-top: 15%;
+    font-family: Montserrat;
+    font-weight:bold;
+    font-size: 48px;
+    letter-spacing: 0.7px;
+}
+
+.welcomeP {
+    text-align: center;
+    padding-top: 0.5%;
+    font-family: "Roboto Slab";
+    opacity: 0.9;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    color:white;
+}
+
+button{
+    margin-top: 2%;
+    margin-bottom: 14%;
+    width: 180px;
+    height: 50px;
+    background-color:rgba(255, 255, 255, 0);
+    color: white;
+    border:2px solid white;
+    text-transform: uppercase;
+    font-family: Montserrat;
+    font-size: 16px;
+}
+
+.start{
+    text-align: center;
+}
+
+.section-service{
+    width: 100%;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.services h3{
+    width:100%;
+    text-align: center;
+    height: 16px;
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-top:99px;
+    position: relative;
+}
+
+.services h3:after{
+    width: 50px;
+    height: 2px;
+    background: #555555;
+    display: block;
+    content: " ";
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: -50px; 
+}
+
+.paragraph-1 h4{
+    text-align: center;
+    padding-top:6%;
+    width: 100%;
+    height: 17px;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+}
+
+.typography{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.code{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.support{
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.typography h3,
+.code h3,
+.support h3 {
+    text-align: center;
+    height: 11px;
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding-top: 29px;
+}
+
+.typography p, 
+.code p, 
+.support p {
+    padding-top: 24px;
+    text-align: center;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    padding-bottom:10%;
+}
+
+.section-about{
+    padding-top: 99px;
+    height: 852px;
+    background-color:#f8f8f8;
+    width: 100%;
+}
+
+.section-carousel-workers{
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.about-us h3{
+    text-align: center;
+    height: 16px;
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.about-us h3:after{
+    width: 50px;
+    height: 2px;
+    background: #555555;
+    display: block;
+    content: " ";
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    bottom: -50px;    
+}
+
+.paragraph-2 h4{
+    text-align: center;
+    padding-top:6%;
+    width: 100%;
+    height: 17px;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+}
+
+.paragraphs{
+    text-align: center;
+    padding-bottom: 5%;
+}
+.paragraph-3{
+    width: 553px;
+    padding-top:5%;
+    text-align: left;
+    height: 110px;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    margin-bottom: 2%;
+    padding-left:15%;
+}
+
+.paragraph-4{
+    width: 553px;
+    padding-top:5%;
+    text-align: justify;
+    height: 110px;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    margin-bottom: 2%;
+    padding-right:15%;
+}
+
+.work1 h4,
+.work2 h4,
+.work3 h4,
+.work4 h4{
+    text-align: center;
+    padding-top: 7%;
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.work1 p,
+.work2 p,
+.work3 p,
+.work4 p{
+    text-align: center;
+    color: #555555;
+    font-family: "Roboto Slab";
+    font-size: 13px;
+}
+
+.img-fluid:hover{
+    background: #000000b6;
+    opacity: 0.5;
+}
+
+.work1 img,
+.work2 img,
+.work3 img,
+.work4 img{
+    position: relative;
+    margin:0;
+    padding: 0;
+}
+
+.work1:hover .before,
+.work2:hover .before,
+.work3:hover .before,
+.work4:hover .before{
+    background: #222222fa;
+    color: white;
+    background-size:cover;
+}
+
+
+.carousel-control-prev-icon:active,
+.carousel-control-next-icon:active{
+    background-color: #c0301c;
+    color:white;
+}
+
+.carousel-control-prev-icon{
+    background-color: #555555ab;
+    background-image:url('../svg/prev.svg');
+    color:white;
+    padding: 15px 15px;
+}
+.carousel-control-next-icon {
+    background-color: #555555ab;
+    background-image:url('../svg/next.svg');
+    color:white;
+    padding: 15px 15px;
+    
+}
+
+.section-4{
+    width: 1140px;
+}
+.latestworks h3{
+    text-align: center;
+    height: 16px;
+    color: #555555;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top:99px;
+    position: relative;
+}
+
+.latestworks h3:after{
+    width: 50px;
+    height: 2px;
+    background: #555555;
+    display: block;
+    content: " ";
+    position: absolute;
+    left: 50%;
+    margin-left: -24px;
+    bottom: -40px; 
+}
+
+
+.second-menu a{
+    height: 100%;
+    color:#555555;
+    text-align: center;
+    margin-top:30px;
+    font-family: "Roboto Slab";
+    font-size: 16px;
+}
+
+.second-menu a:hover{
+    color:#c0301c;
+}
+
+.projects{
+    padding-top: 2%;
+    padding-bottom: 2px;
+}
+.projects img{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width:360px;
+    height: 320px;
+}
+
+.projects:hover .after {
+    background: #c02f1cfa;
+    color: white;
+    background-size:cover;
+}
+
+.companies{
+    background-color: #f8f8f8;
+    padding-top: 2%;
+}
+
+
+.companies{
+    text-align: center;
+}
+.companies img{
+    margin: 2%;
+}
+
+.quote{
+    padding: 2%;
+    text-align: center;
+    color: #555555;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+
