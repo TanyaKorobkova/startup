@@ -9,9 +9,6 @@
 input, textarea {outline:none;}
 input:active, textarea:active {outline:none;}
 :focus {outline:none;}
-textarea {resize:none;}
-textarea {resize:vertical;}
-textarea {resize:horizontal;}
 
 button:active, button:focus {
     outline: none;
@@ -32,6 +29,7 @@ button::-moz-focus-inner {
     font-size: 24px;
     font-family: Montserrat;
     font-weight: bolder;
+    letter-spacing: 0.35px;
 }
 
 .logo a {
@@ -53,6 +51,7 @@ button::-moz-focus-inner {
     font-weight: bold;
     font-size: 48px;
     letter-spacing: 0.7px;
+    color: #ffffff;
 }
 
 .welcomeP {
@@ -75,6 +74,12 @@ button {
     text-transform: uppercase;
     font-family: Montserrat;
     font-size: 16px;
+}
+
+button:active {
+    background-color:#ffffff83;
+    color: black;
+    border: 2px solid white;
 }
 
 .start {
@@ -204,81 +209,45 @@ button {
     margin-bottom: 2%;
 }
 
-.work1 h4,
-.work2 h4,
-.work3 h4,
-.work4 h4 {
-    text-align: center;
-    padding-top: 7%;
-    color: #555555;
-    font-family: Montserrat;
-    font-size: 14px;
-    text-transform: uppercase;
-}
+/*uikit slaider start*/
 
-.work1 p,
-.work2 p,
-.work3 p,
-.work4 p {
-    text-align: center;
-    color: #555555;
-    font-family: "Roboto Slab";
-    font-size: 13px;
-}
-
-.img-fluid:hover {
-    background: #000000b6;
-    opacity: 0.5;
-}
-
-.work1 .img-fluid,
-.work2 .img-fluid,
-.work3 .img-fluid,
-.work4 .img-fluid {
+.pictures img{
     position: relative;
 }
 
-.work1:hover .before,
-.work2:hover .before,
-.work3:hover .before,
-.work4:hover .before {
-    background: #222222fa;
-    color: white;
-    background-size: cover;
+.uk-card-body-small h3{
+    padding-top:5%;
+    text-align: center;
+    color: #555555;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+}
+
+.uk-card-body-small p{
+color: #555555;
+font-family: "Roboto Slab";
+font-size: 13px;
+text-align: center;
+padding-bottom:5%
 }
 
 
-.carousel-control-prev-icon:active,
-.carousel-control-next-icon:active {
-    background-color: #c0301c;
-    color: white;
-}
-
-.carousel-control-prev-icon {
-    background-color: #555555ab;
-    background-image: url('../svg/prev.svg');
-    color: white;
-    
-}
-
-.carousel-control-prev{
-    height: 242px;
+.social-logo{
+    display: none;
     position: absolute;
-    margin:0 auto;
-    width:3% !important;
-}
-.carousel-control-next{
-    height: 242px;
-    position: absolute;
-    margin:0 auto;
-    width:3% !important;
 }
 
-.carousel-control-next-icon {
-    background-color: #555555ab;
-    background-image: url('../svg/next.svg');
-    color: white;
+.pictures img:hover .social-logo{
+    display: block;
+    background-color:rgba(255, 255, 255, 0.3);
 }
+
+
+/*uikit slaider end*/
+
+
+/*latestworks*/
 
 .latestworks h3 {
     text-align: center;
@@ -302,35 +271,26 @@ button {
     bottom: -30px;
 }
 
-.second-menu a {
-    color: #555555;
-    text-align: center;
-    margin-top: 40px;
-    font-family: "Roboto Slab";
-    font-size: 16px;
+.uk-subnav {
+    padding-top:3%;
+    padding-bottom: 5%;
+}
+.uk-subnav a{
+    color: #555555 !important ;
+    font-family: "Roboto Slab" !important;
+    font-size: 16px !important;
+    text-transform: capitalize !important;
+}
+.uk-subnav a:hover{
+    color:#c0301c !important;
 }
 
-.second-menu a:hover {
-    color: #c0301c;
+.js-filter{
+    padding-bottom: 1%;
 }
 
-.projects {
-    padding-top: 2%;
-    padding-bottom: 2px;
-}
 
-.projects img {
-    text-align: center;
-    padding: 0;
-    margin: 0;
-    position: relative;
-}
 
-.projects:hover .after {
-    background: #c02f1cfa;
-    color: white;
-    background-size: cover;
-}
 /*companies and feedback*/
 .section-companies {
     width: 100%;
@@ -349,47 +309,31 @@ button {
 
 /*dottenslider*/
 
-.dotten-slider{
-    width: 100%;
-}
-
-.slaider_02 {
-    margin-top: 5%;
+.uk-transition-toggle p{
+    padding:2% 15%;
+    color:#555555;
     text-align: center;
-    color: #555555;
-    font-family: "Roboto Slab" italic;
+    font-family: "Roboto Slab";
     font-size: 18px;
-    transition: 0.5s;
+    font-style: italic;
 }
 
-.slaider_01 {
-    color: #555555;
-    font-family: 'Montserrat';
+.uk-transition-toggle h3{
+    color:#555555;
+    text-align: center;
+    font-family: "Roboto Slab";
     font-size: 20px;
-    padding-top: 2%;
-    padding-bottom: 5%;
-    transition: 0.5s;
 }
 
-.carousel-indicators li {
-    margin-top: 10%;
-    margin-bottom: 5%;
-    display: inline;
-    width: 15px;
-    height: 15px;
-    border-radius: 100%;
-    background-color:#dddddd;
+.uk-dotnav li{
+    margin-bottom:6%;
 }
 
-.carousel-indicators li:active {
-    background-color: #c0301c;
+.uk-dotnav a:hover {
+    background-color: #c0301c !important;
 }
 
 /*form contacts*/
-.section-contacts{
-    background-color:#ffffff;
-}
-
 .getintouch{
     text-align: center;
     color: #555555;
@@ -433,14 +377,13 @@ button {
 }
 
 .contacts li{
-    padding-left:8%;
+    padding-left:1%;
 }
 
 .contacts li, a{
 color: #555555;
 font-family: "Roboto Slab";
 font-size: 12px;
-padding-bottom: 5%;
 }
 
 .contacts a:hover{
@@ -478,6 +421,7 @@ form {
 
 .form-email{
     grid-column:2/4;
+    margin-top: 0 !important;
 }
 
 .form-subject{
@@ -497,14 +441,18 @@ textarea {
     padding: 1em;
 }
 
-.form-button {
-    border: 1px solid #555555;
-    color: #555555;
+.form-button{
+    width: 180px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0);
+    border:1px solid #555555;
+    text-transform: uppercase;
     font-family: "Roboto Slab";
     font-size: 12px;
-    margin-top: 0px;
-    margin-bottom: 30%;
+    color: #555555;
     grid-column:1/2;
+    margin-bottom: 30%;
+    text-align: center;
 }
 
 .form-button:hover, .form-button:focus {
@@ -519,6 +467,7 @@ textarea {
     font-size: 12px;
     text-align: start;
     grid-column: 2/ 4;
+    margin-left: -40% !important;
 }
 
 span.star{
