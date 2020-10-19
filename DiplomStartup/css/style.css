@@ -860,10 +860,10 @@ span.star{
 .svg-social-media:after {
     width: 50px;
     height: 2px;
-    background: #ffffff;
-    display: block;
+    background: #ffffff !important;
+    display: block !important;
     content: " ";
-    position: absolute;
+    position: absolute !important;
     left: 50%;
     margin-left: -24px;
     bottom: -40px;
