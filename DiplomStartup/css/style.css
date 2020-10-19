@@ -13,11 +13,14 @@ input:active, textarea:active {outline:none;}
 button:active, button:focus {
     outline: none;
 }
+
 button::-moz-focus-inner {
     border: 0;
 }
 
-.section-home {
+/*section-home*/
+
+#section-home {
     color: white;
     background-image: url('../jpeg/Home_Background.jpg');
     background-repeat: no-repeat;
@@ -36,7 +39,6 @@ button::-moz-focus-inner {
     color: white;
 }
 
-
 .nav-item a {
     color: white;
     font-family: Montserrat;
@@ -44,14 +46,16 @@ button::-moz-focus-inner {
     letter-spacing: 0.35px;
 }
 
+.middle{
+    margin: auto auto;
+}
 .welcome h1 {
     text-align: center;
-    padding-top: 27%;
     font-family: Montserrat;
     font-weight: bold;
     font-size: 48px;
     letter-spacing: 0.7px;
-    color: #ffffff;
+    color: #ffffff !important;
 }
 
 .welcomeP {
@@ -64,7 +68,7 @@ button::-moz-focus-inner {
     color: white;
 }
 
-button {
+.getstart{
     margin-top: 2%;
     width: 180px;
     height: 50px;
@@ -76,16 +80,16 @@ button {
     font-size: 16px;
 }
 
-button:active {
-    background-color:#ffffff83;
+.getstart:active {
+    background-color:#ffffff;
     color: black;
-    border: 2px solid white;
+    border: none;
 }
 
 .start {
     text-align: center;
 }
-
+/*section-service*/
 .services h3 {
     width: 100%;
     text-align: center;
@@ -150,7 +154,9 @@ button:active {
     padding-bottom: 10%;
 }
 
-.section-about {
+/*section-about*/
+
+#section-about {
     padding-top: 5%;
     background-color: #f8f8f8;
     width: 100%;
@@ -187,7 +193,6 @@ button:active {
 }
 
 .paragraphs {
-    text-align: center;
     padding-bottom: 5%;
 }
 
@@ -210,13 +215,62 @@ button:active {
 }
 
 /*uikit slaider start*/
+.worker{
+	background: #000000;
+}
 
-.pictures img{
+.worker img {
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
     position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.worker:hover img {
+    opacity: .8;
+}
+
+.worker a{
+    display: none;
+}
+
+.worker:hover .google{
+    display: block;
+    position: absolute;
+    width: 10% !important;
+    left:65px;
+    bottom:100px;
+}
+
+.worker:hover .linkedin{
+    display: block;
+    position: absolute;
+    width: 10% !important;
+    left:95px;
+    bottom:100px;
+}
+
+.worker:hover .twitter{
+    display: block;
+    position: absolute;
+    width: 10% !important;
+    left:125px;
+    bottom:100px;
+    opacity: 2;
+}
+
+.worker:hover .facebook{
+    display: block;
+    position: absolute;
+    width: 10% !important;
+    left:155px;
+    bottom:100px;
 }
 
 .uk-card-body-small h3{
-    padding-top:5%;
+    padding-top:0%;
     text-align: center;
     color: #555555;
     font-size: 14px;
@@ -229,23 +283,40 @@ color: #555555;
 font-family: "Roboto Slab";
 font-size: 13px;
 text-align: center;
-padding-bottom:5%
+padding-bottom:5%;
 }
 
-
-.social-logo{
-    display: none;
+polyline{
+    color: #ffffff;
     position: absolute;
 }
 
-.pictures img:hover .social-logo{
-    display: block;
-    background-color:rgba(255, 255, 255, 0.3);
+.uk-slidenav-previous{
+    background:#55555580;
+    margin-top:-40px;
+    margin-left: 0px;
+}
+.uk-slidenav-previous:hover{
+    padding:5px 10px;
+    background:#c0301c;
 }
 
+.uk-slidenav-next{
+    background:#55555580;
+    margin-top:-40px;
+    margin-right: 0px;
+}
+.uk-slidenav-next:hover{
+    padding:5px 10px;
+    background:#c0301c;
+}
+
+.social-logo{
+    text-align: center;
+    padding-bottom:30px;
+}
 
 /*uikit slaider end*/
-
 
 /*latestworks*/
 
@@ -275,24 +346,317 @@ padding-bottom:5%
     padding-top:3%;
     padding-bottom: 5%;
 }
+
 .uk-subnav a{
     color: #555555 !important ;
     font-family: "Roboto Slab" !important;
     font-size: 16px !important;
     text-transform: capitalize !important;
 }
+
 .uk-subnav a:hover{
     color:#c0301c !important;
 }
 
 .js-filter{
-    padding-bottom: 1%;
+    padding-bottom: 2%;
 }
 
+.uk-grid-margin{
+    margin-top: 2% !important;
+}
 
+.uk-card .latest {
+    background: #c0301c;
+}
+
+.uk-card .latest img {
+    opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.uk-card .latest:hover img {
+    opacity: .3;
+}
+
+.viewmore{
+    display: none;
+}
+
+figure:hover .viewmore{
+    display: block;
+    color:#c02f1cc0;
+    padding:5px 10px !important;
+    border:none;
+    position: absolute;
+    left: 120px !important;
+    bottom:100px !important;
+    width: 30% !important;
+    height: 12% !important;
+    background-color:#ffffff;
+    font-family: "Roboto Slab";
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.viewmore:active {
+    box-shadow: 0px 0px 10px 5px rgba(231, 226, 226, 0.747);
+}
+
+figure.latest p,
+figure.latest h3 {
+    display: none;
+}
+
+figure.latest:hover h3.hairdresser{
+    display: block;
+    color:white;
+    position: absolute;
+    left: 115px !important;
+    bottom:160px !important;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover p.hairdresser{
+    width: 10%;
+    display: block;
+    color:white;
+    position: absolute;
+    left: 145px !important;
+    bottom:140px !important;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover h3.bird{
+    display: block;
+    color:white;
+    position: absolute;
+    left: 105px !important;
+    bottom:160px !important;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover p.bird{
+    width: 10%;
+    display: block;
+    color:white;
+    position: absolute;
+    left: 145px !important;
+    bottom:140px !important;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover h3.workspace{
+    display: block;
+    color:white;
+    position: absolute;
+    left: 118px !important;
+    bottom:160px !important;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover p.workspace{
+    width: 10%;
+    display: block;
+    color:white;
+    position: absolute;
+    left: 132px !important;
+    bottom:140px !important;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover h3.photographer{
+    display: block;
+    color:white;
+    position: absolute;
+    left: 140px !important;
+    bottom:160px !important;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover p.photographer{
+    width: 10%;
+    display: block;
+    color:white;
+    position: absolute;
+    left: 145px !important;
+    bottom:140px !important;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover h3.sport{
+    display: block;
+    color:white;
+    position: absolute;
+    left: 125px !important;
+    bottom:160px !important;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover p.sport{
+    width: 10%;
+    display: block;
+    color:white;
+    position: absolute;
+    left: 145px !important;
+    bottom:140px !important;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover h3.notebook{
+    display: block;
+    color:white;
+    position: absolute;
+    left: 140px !important;
+    bottom:160px !important;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover p.notebook{
+    width: 10%;
+    display: block;
+    color:white;
+    position: absolute;
+    left: 150px !important;
+    bottom:140px !important;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover h3.business{
+    display: block;
+    color:white;
+    position: absolute;
+    left: 133px !important;
+    bottom:160px !important;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover p.business{
+    width: 10%;
+    display: block;
+    color:white;
+    position: absolute;
+    left: 135px !important;
+    bottom:140px !important;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover h3.design{
+    display: block;
+    color:white;
+    position: absolute;
+    left: 145px !important;
+    bottom:160px !important;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover p.design{
+    width: 10%;
+    display: block;
+    color:white;
+    position: absolute;
+    left: 150px !important;
+    bottom:140px !important;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover h3.events{
+    display: block;
+    color:white;
+    position: absolute;
+    left: 135px !important;
+    bottom:160px !important;
+    color: #ffffff;
+    font-family: Montserrat;
+    font-size: 18px;
+    opacity: 1;
+    text-align: center;
+}
+
+figure.latest:hover p.events{
+    width: 10%;
+    display: block;
+    color:white;
+    position: absolute;
+    left: 132px !important;
+    bottom:140px !important;
+    color: #ffffff;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    opacity: 1;
+    text-align: center;
+}
 
 /*companies and feedback*/
-.section-companies {
+#section-companies {
     width: 100%;
     background-color: #f8f8f8;
     padding-top: 2%;
@@ -305,7 +669,6 @@ padding-bottom:5%
 .companies img {
     margin: 2%;
 }
-
 
 /*dottenslider*/
 
@@ -406,6 +769,10 @@ textarea{
     font-size: 12px;
 }
 
+textarea{
+    min-height: 50px;
+}
+
 ul {
     list-style: none;
 }
@@ -415,6 +782,7 @@ form {
     grid-template-columns: 1fr 1fr;
     grid-column-gap:30px;
 }
+
 .form-name{
     grid-column:1/2;
 }
@@ -461,6 +829,10 @@ textarea {
     border:1px solid #c0301c;
 }
 
+.form-button:active{
+    box-shadow: 0px 0px 10px 5px rgba(201, 193, 193, 0.747);
+}
+
 .note{
     color: #555555;
     font-family: "Roboto Slab";
@@ -481,11 +853,11 @@ span.star{
     height: 307px;
 }
 
-.svg-twitter{
+.svg-social-media{
     margin-top: 8%;
 }
 
-.svg-twitter:after {
+.svg-social-mediav:after {
     width: 50px;
     height: 2px;
     background: #ffffff;
@@ -504,4 +876,9 @@ span.star{
     text-transform: uppercase;
     font-family: "Roboto Slab";
     font-size: 12px;
+}
+
+a.footerlink{
+    color: #fff;
+    text-decoration: none;
 }
